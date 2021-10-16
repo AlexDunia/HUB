@@ -16,7 +16,73 @@
 </head>
 <body> 
 
-    <div class="header">
+
+    <header>
+
+        <div class="container">
+    
+                                <!-- the one for desktop site -->
+
+                                <div class="header">
+
+                                    <div id="menuItemm">
+                                        <div> 
+                                            <span class="icon" id="tryicon"> X</span>
+                        
+                                          </div>
+                                          <br> <br> 
+                                            <ul class="menulist">    
+                                            <li> <a href="index.html" class="scroll"> Home </a> </li>
+                                          <li> <a href="aboutus.html" class="scroll"> About us </a></li>
+                                          <li> <a href="properties.html" class="scroll"> Properties </a> </li>
+                                          <li> <a href="contactus.html" class="scroll"> Contact Us </a> </li>
+                                           </ul>
+                                         </div>
+                                         
+                                <div class="hflex2">
+                    
+                                    <div class="logo">
+                                        <a href="properties.html"> <img src="images/ba.png" width="80px"> </a>
+                                    </div> 
+                                
+                                    <div class="links">
+                                        <ul> 
+                                            <img src="images/menuwhite.png" onclick="menutoggle()" width="25px">
+                                        </ul>
+                                       </div>
+                                    </div>
+                                    </div>
+                                    <!-- end of respp -->
+        
+                                    <div class="headericon">
+                                    <div class="hflex">
+                            
+                                <div class="logo">
+                                    <a href="properties.html"> <img src="images/ba.png" width="140px"> </a>
+                                </div> 
+                            
+                                <div class="links">
+                                    <ul> 
+                                        <li> <a href="index.html"> Home </a> </li>
+                                        <li> <a href="aboutus.html"> ABOUT US </a> </li>
+                                        <li> <a href="properties.html"> PROPERTIES </a> </li>
+                                        <li> <a href="contactus.html"> CONTACT US </a> </li>
+                                    </ul>
+                                   </div>
+                                </div>
+                            
+                                </div>
+                            
+                            </div>
+                        </div>
+                                <!--  end of where we control the nav -->
+
+    </div>
+
+    </header>
+
+
+    <!-- <div class="header">
 
         <div class="container">
         <div class="hflex">
@@ -58,7 +124,7 @@
 
 </div>
 
-</div>
+</div> -->
 
     <!-- note that showcase is the main div of this page. The users would be
          able to seclect an apartment and actually view different sides
@@ -147,24 +213,24 @@
 
 <footer>
     
-    <div class="fflex">
+     <div class="fflex">
 
         <div class="firstaxis">
             <h3> BEEFAHS APARTMENTS </h3>
-            <p> Lorem ipsum is simply dummy <br> 
-            text of the printing and typesetting <br>
-        industry. Lorem Ipsum has been <br>
-        the industry's standard dummy text <br> 
-        ever since the 1500s</p>
+            <p> Beefahs apartment is a brokerage real estate<br> 
+                agency that helps people, majorly <br> 
+                based in Lagos, Island book fully furnished <br>
+                apartments and also buy apartments and lands <br> 
+                at affordable rates. </p>
         </div>
 
 
         <div class="secondaxis">
             <h3> SITE INFO </h3>
-               <a href="*">  <p> HOME </p> </a>
-                <p> ABOUT US </p> 
-                <p>  PROPERTIES </p>  
-                <p>  CONTACT US </p> 
+               <a href="index.html">  <p> HOME </p> </a>
+               <a href="aboutus.html">    <p> ABOUT US </p>  </a>
+               <a href="properties.html"> <p>  PROPERTIES </p> </a>  
+               <a href="contactus.html"> <p>  CONTACT US </p> </a> 
         </div>
 
         <div class="secondaxis"> 
@@ -175,6 +241,23 @@
 
         <div class="secondaxis"> 
             <h3> CHECK OUR SOCIALS </h3>
+
+            <div class="socialicon">
+
+                <div>
+                    <img src="images/facebook.png"  width="30px">
+                </div>
+
+                <div>
+                    <img src="images/twitter.png" width="30px">
+                </div>
+
+                <div>
+                    <a href="https://www.instagram.com/beefahs_apartments/"> <img src="images/instagram.png"  width="30px"> </a>
+                </div>
+
+            </div>
+
         </div>
 
     </div>
@@ -252,6 +335,27 @@ so thats even more reason to want to dey my hard as the hard guy i am . Hardest 
    }
 })
    
+
+
+// menu toggle
+
+function menutoggle(){
+	const display = document.querySelector("#menuItemm")
+	display.style.visibility = "visible"
+	display.style.animation = "slideInFromLeft 0.7s ease-in-out";
+	
+
+}
+
+
+var iconn = document.getElementById("tryicon");
+iconn.addEventListener("click", function() {
+	const display = document.querySelector("#menuItemm")
+	display.style.animation = "slideOutFromRight 3s ease-in-out";
+	display.style.visibility = "hidden"
+});
+
+
  </script>
 </body>
 </html>

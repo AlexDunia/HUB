@@ -10,12 +10,14 @@
 window.addEventListener ("scroll", function () {
 const headheight = head.getBoundingClientRect().height;
 const headheightmq = headmq.getBoundingClientRect().height;
+const display = document.querySelector("#menuItemm")
   const scrollHeight = window.pageYOffset;
 
 
 if (scrollHeight > headheight){
    head.classList.add("fixed-nav");
    headmq.classList.add("fixed-nav");
+   display.style.visibility = "hidden"
 }
 else{
  head.classList.remove("fixed-nav"); 
